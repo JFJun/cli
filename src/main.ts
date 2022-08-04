@@ -39,19 +39,19 @@ const subcommand = args._[0]
 log.debug(`Selected command ${chalk.bold(subcommand)}`)
 
 const help = `
-  ${chalk.bold('Decentraland CLI')}
+  ${chalk.bold('ZQB CLI')}
 
-  Usage: ${chalk.bold('dcl [command] [options]')}
+  Usage: ${chalk.bold('zqb [command] [options]')}
 
     ${chalk.dim('Commands:')}
 
-      init                  Create a new Decentraland Scene project
+      init                  Create a new ZQB Scene project
       build                 Build scene
-      start                 Start a local development server for a Decentraland Scene
-      install               Sync decentraland libraries in bundleDependencies
+      start                 Start a local development server for a ZQB Scene
+      install               Sync ZQB libraries in bundleDependencies
       install package       Install a package
-      deploy                Upload scene to a particular Decentraland's Content server
-      deploy-deprecated     Upload scene to Decentraland's legacy content server (deprecated).
+      deploy                Upload scene to a particular ZQB Content server
+      deploy-deprecated     Upload scene to ZQB legacy content server (deprecated).
       export                Export scene to static website format (HTML, JS and CSS)
       info      [args]      Displays information about a LAND, an Estate or an address
       status    [args]      Displays the deployment status of the project or a given LAND
@@ -63,13 +63,13 @@ const help = `
     ${chalk.dim('Options:')}
 
       -h, --help          Displays complete help for used command or subcommand
-      -v, --version       Display current version of dcl
+      -v, --version       Display current version of zqb
 
     ${chalk.dim('Example:')}
 
     - Show complete help for the subcommand "${chalk.dim('deploy')}"
 
-      ${chalk.green('$ dcl help deploy')}
+      ${chalk.green('$ zqb help deploy')}
 `
 
 export async function main(version: string) {
@@ -151,8 +151,8 @@ export async function main(version: string) {
   } catch (e: any) {
     console.error(
       log.error(
-        `\`${chalk.green(`dcl ${subcommand}`)}\` ${e.message}, run ${chalk.bold(
-          `"dcl help ${subcommand}"`
+        `\`${chalk.green(`zqb ${subcommand}`)}\` ${e.message}, run ${chalk.bold(
+          `"zqb help ${subcommand}"`
         )} for more info.`
       )
     )

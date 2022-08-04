@@ -3,7 +3,7 @@
   "version": "3.11.0",
   "description": "Decentraland CLI developer tool.",
   "bin": {
-    "dcl": "dist/index.js"
+    "zqb": "dist/index.js"
   },
   "files": [
     "dist",

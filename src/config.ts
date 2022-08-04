@@ -131,9 +131,10 @@ function getDclInfoConfig(): Partial<DCLInfo> {
     LANDRegistry: dclInfo.LANDRegistry,
     EstateRegistry: dclInfo.EstateRegistry,
     catalystUrl: dclInfo.catalystUrl,
+    dclApiUrl: dclInfo.dclApiUrl,
     segmentKey: dclInfo.segmentKey
   }
-
+  console.log("DCL Info config: ",dclInfoConfig)
   return removeEmptyKeys(dclInfoConfig)
 }
 
@@ -144,6 +145,7 @@ function getEnvConfig(): Partial<DCLInfo> {
     LAND_REGISTRY,
     ESTATE_REGISTRY,
     CONTENT_URL,
+    API_URL,
     SEGMENT_KEY
   } = process.env
 
@@ -153,8 +155,9 @@ function getEnvConfig(): Partial<DCLInfo> {
     LANDRegistry: LAND_REGISTRY,
     EstateRegistry: ESTATE_REGISTRY,
     contentUrl: CONTENT_URL,
+    dclApiUrl: API_URL,
     segmentKey: SEGMENT_KEY
   }
-
+  console.log("DCL env config:",envConfig)
   return removeEmptyKeys(envConfig)
 }
