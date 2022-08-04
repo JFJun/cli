@@ -134,7 +134,7 @@ function getDclInfoConfig(): Partial<DCLInfo> {
     dclApiUrl: dclInfo.dclApiUrl,
     segmentKey: dclInfo.segmentKey
   }
-  console.log("DCL Info config: ",dclInfoConfig)
+  //console.log("DCL Info config: ",dclInfoConfig)
   return removeEmptyKeys(dclInfoConfig)
 }
 
@@ -158,6 +158,6 @@ function getEnvConfig(): Partial<DCLInfo> {
     dclApiUrl: API_URL,
     segmentKey: SEGMENT_KEY
   }
-  console.log("DCL env config:",envConfig)
+  //console.log("DCL env config:",envConfig)
   return removeEmptyKeys(envConfig)
 }

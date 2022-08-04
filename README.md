@@ -10,13 +10,13 @@ This CLI provides tooling/commands to assist you in the [scenes](https://github.
 To install the latest version of `dcl` (Decentraland CLI), run this command:
 
 ```bash
-npm install -g decentraland
+npm install -g zqb-cli
 ```
 
 To learn what you can do with the CLI run the following command:
 
 ```bash
-dcl --help
+zqb --help
 ```
 
 See more details at [Decentraland docs](https://docs.decentraland.org/getting-started/installation-guide).
@@ -30,7 +30,7 @@ For details on how to use Decentraland developer tools, check our [documentation
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
 2.  Install dependencies with `npm install`.
 3.  Build the project by running `npm run build`.
-4.  Link the CLI with: `npm link`. The `dcl` command should now be available.
+4.  Link the CLI with: `npm link`. The `zqb` command should now be available.
 5.  You can run tests with `npm test`
 
 **NOTE:** you can set the environment variable `DEBUG=true` to see all debugging info
@@ -40,15 +40,16 @@ Just update the version on the `package.json` file and merge to master.
 
 ## Configuration
 
-`dcl` can be configured in several ways to adapt it to another environment other than the default one. To do this you have to either set environment variables or change your `~/.dclinfo` file:
+`zqb` can be configured in several ways to adapt it to another environment other than the default one. To do this you have to either set environment variables or change your `~/.dclinfo` file:
 
 | Variable name            | Enviroment variable |  `~/.dclinfo`  |
-| ------------------------ | :-----------------: | :------------: |
+|--------------------------|:-------------------:| :------------: |
 | Provider                 |       RPC_URL       |       -        |
 | MANA Token Contract      |     MANA_TOKEN      |   MANAToken    |
 | LAND Registry Contract   |    LAND_REGISTRY    |  LANDRegistry  |
 | Estate Registry Contract |   ESTATE_REGISTRY   | EstateRegistry |
 | Content Server URL       |     CONTENT_URL     |   contentUrl   |
+| API URL                  |       API_URL       |   dclApiUrl   |
 | Segment API key          |     SEGMENT_KEY     |   segmentKey   |
 
 ## Copyright info

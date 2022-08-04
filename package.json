@@ -1,7 +1,7 @@
 {
-  "name": "decentraland",
+  "name": "zqb-cli",
   "version": "3.11.0",
-  "description": "Decentraland CLI developer tool.",
+  "description": "Flynn CLI developer tool.",
   "bin": {
     "zqb": "dist/index.js"
   },
@@ -21,7 +21,7 @@
     "test:ci": "FORCE_COLOR=1 ava -v --fail-fast -T 5m",
     "test:win": "set FORCE_COLOR=1 ava -v --fail-fast -T 5m "
   },
-  "repository": "decentraland/cli",
+  "repository": "JFJun/cli",
   "keywords": [
     "decentraland",
     "cli",
@@ -38,7 +38,7 @@
     ]
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/decentraland/cli",
+  "homepage": "https://github.com/JFJun/cli",
   "devDependencies": {
     "@dcl/eslint-config": "^1.0.1",
     "@types/analytics-node": "^3.1.8",
