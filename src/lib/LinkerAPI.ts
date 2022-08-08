@@ -119,6 +119,7 @@ export class LinkerAPI extends EventEmitter {
 
   async getSceneInfo(rootCID: string) {
     const { LANDRegistry, EstateRegistry } = getCustomConfig()
+    console.log("getCustomConfig: LANDRegistry, EstateRegistry",LANDRegistry,EstateRegistry)
     const {
       scene: { parcels, base },
       display

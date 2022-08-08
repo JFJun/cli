@@ -1,6 +1,6 @@
 {
   "name": "zqb-cli",
-  "version": "3.11.0",
+  "version": "1.0.0",
   "description": "Flynn CLI developer tool.",
   "bin": {
     "zqb": "dist/index.js"
@@ -25,7 +25,7 @@
   "keywords": [
     "decentraland",
     "cli",
-    "dcl",
+    "zqb",
     "mana",
     "land"
   ],

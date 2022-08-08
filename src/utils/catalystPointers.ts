@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+import {  getConfig } from '../config'
 
 export type DAOCatalyst = {
   baseUrl: string
@@ -17,10 +18,18 @@ export type Network = 'mainnet' | 'ropsten'
 export async function daoCatalysts(
   network: Network = 'mainnet'
 ): Promise<Array<DAOCatalyst>> {
-  const tld = network === 'mainnet' ? 'org' : 'zone'
-  const resp = await (
-    await fetch(`https://peer.decentraland.${tld}/lambdas/contracts/servers`)
-  ).json()
+  // const tld = network === 'mainnet' ? 'org' : 'zone'
+  // const resp = await (
+  //   await fetch(`https://peer.decentraland.${tld}/lambdas/contracts/servers`)
+  // ).json()
+
+  let resp : Array<DAOCatalyst> = new Array<DAOCatalyst>()
+
+  resp[0] = {
+    id: "",
+    owner: "",
+    baseUrl:getConfig().catalystUrl || ''
+  }
   return resp
 }
 

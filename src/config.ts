@@ -33,6 +33,7 @@ function getDCLInfoPath(): string {
  */
 async function readDCLInfo(): Promise<DCLInfo | null> {
   const filePath = getDCLInfoPath()
+  console.log("dcl info file path:",filePath)
   try {
     const file = await readJSON<DCLInfo>(filePath)
     return file
@@ -134,7 +135,6 @@ function getDclInfoConfig(): Partial<DCLInfo> {
     dclApiUrl: dclInfo.dclApiUrl,
     segmentKey: dclInfo.segmentKey
   }
-  //console.log("DCL Info config: ",dclInfoConfig)
   return removeEmptyKeys(dclInfoConfig)
 }
 
@@ -158,6 +158,6 @@ function getEnvConfig(): Partial<DCLInfo> {
     dclApiUrl: API_URL,
     segmentKey: SEGMENT_KEY
   }
-  //console.log("DCL env config:",envConfig)
+
   return removeEmptyKeys(envConfig)
 }
